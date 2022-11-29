@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-to-do',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./to-do.component.css']
 })
 export class ToDoComponent {
+  constructor(private api:ApiService){
+    api.fetchtodo().subscribe(
+      (response)=>{
+        this.todo=response
+      }
+    )
+  }
 todo:any=[]
 }
