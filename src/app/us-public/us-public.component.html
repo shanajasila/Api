@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row g-3 mt-4">
+       <table class="table  table-striped text-center">
+            <thead>
+                <tr>
+                    <th>Nation Id</th>
+                    <th>Nation</th>
+                   <th>Id Year</th>
+                   <th>Year</th>
+                   <th>Population</th>
+                   <th>Slug Nation</th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr *ngFor="let i of public.data">
+                    <td>{{i['ID Nation']}}</td>
+                    <td>{{i.Nation}}</td>
+                     <td>{{i['ID Year']}}</td>
+                     <td>{{i.Year}}</td>
+                     <td>{{i.Population}}</td>
+                     <td>{{i['Slug Nation']}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
