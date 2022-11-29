@@ -8,6 +8,7 @@ import { UsPublicComponent } from './us-public/us-public.component';
 import { PublicApiComponent } from './public-api/public-api.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const myROute:Routes=[
   {
@@ -25,7 +26,8 @@ const myROute:Routes=[
     PassengerDataComponent,
     UsPublicComponent,
     PublicApiComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
