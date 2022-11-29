@@ -11,6 +11,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { UserdataComponent } from './userdata/userdata.component';
 import { ToDoComponent } from './to-do/to-do.component';
+import { QuoteComponent } from './quote/quote.component';
 
 const myROute:Routes=[
   {
@@ -31,7 +32,8 @@ const myROute:Routes=[
     UserInfoComponent,
     ProductListComponent,
     UserdataComponent,
-    ToDoComponent
+    ToDoComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,
